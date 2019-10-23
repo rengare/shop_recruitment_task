@@ -1,0 +1,12 @@
+<div class="row">
+
+  <a *ngFor="let product of ( products$ | async )" [routerLink]="['/detail', product.id]"
+    routerLinkActive="router-link-active" class="col-md-3 product">
+
+    <img [src]="product.image" class="img-fluid" alt="product image">
+
+    <h4 class="title">{{product.title}}</h4>
+    <p class="description">{{product.description}}</p>
+  </a>
+
+</div>

@@ -7,7 +7,7 @@ export * from './app-state.store';
 export * from './app-state.service';
 
 export const AppStateDefaults = [
+    AppStateStore,
     AppStateQuery,
     AppStateService,
-    AppStateStore,
 ];

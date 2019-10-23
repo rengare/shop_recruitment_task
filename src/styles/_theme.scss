@@ -1,0 +1,44 @@
+shop-card {
+  .icon-header {
+    color: $primary-color;
+  }
+}
+
+main {
+  margin-top: 57px;
+}
+
+nav {
+  border-bottom: 1px solid #D6D6D6;
+
+  .navbar-nav {
+    .nav-link.active {
+      color: $primary-color !important;
+    }
+  }
+}
+
+shop-cart {
+  .cart {
+    background-color: $primary-color;
+  }
+
+  .cart-item {
+    background-color: $tertiary-color;
+  }
+}
+
+shop-product-detail {
+  color: white;
+
+  .product-details {
+    padding: 12px 32px;
+    background: $primary-color;
+
+    .add-btn {
+      color: white;
+      background: $secondary-color;
+    }
+  }
+
+}

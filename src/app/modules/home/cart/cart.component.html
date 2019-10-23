@@ -1,0 +1,32 @@
+<aside class="cart">
+
+  <section class="section-header">
+    <i class="far fa-address-book"></i>
+    <h3>Contact</h3>
+  </section>
+
+  <section class="contact-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam purus est, placerat sed
+    ante vel, ultrices
+    congue
+    augue.
+  </section>
+
+  <section class="section-header">
+    <i class="fas fa-cart-plus"></i>
+    <h3>Cart</h3>
+  </section>
+
+  <section class="cart-items">
+    <h3 *ngIf="(cartCount$ | async) === 0; else cartItems">Cart is empty</h3>
+
+    <ng-template #cartItems>
+        <span *ngFor="let item of (cartItems$ | async)" class="cart-item">
+          <span class="price">{{item.price}}</span> Title {{item.title}}
+        </span>
+      <p>Total: {{ totalPrice$ | async }}</p>
+
+    </ng-template>
+
+  </section>
+
+</aside>

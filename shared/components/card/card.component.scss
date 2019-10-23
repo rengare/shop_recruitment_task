@@ -1,0 +1,23 @@
+.info-card {
+  background: #FFFFFF;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.02);
+  padding-bottom: 41px;
+  margin-top: 50px;
+  text-align: center;
+
+  >.icon-header {
+    padding-top: 57px;
+    display: inline-block;
+    font-size: 80px;
+  }
+
+  >.title {
+    color: #4E5259;
+    margin-top: 45px;
+    margin-bottom: 16px;
+  }
+
+  .description {
+    text-align: justify;
+  }
+}

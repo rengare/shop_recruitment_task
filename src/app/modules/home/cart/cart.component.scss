@@ -1,0 +1,46 @@
+$top-space: 22px;
+
+aside {
+  padding: 0px $top-space 25px;
+  color: white;
+
+  .section-header {
+    padding-top: 25px;
+
+    i {
+      font-size: 1.5rem;
+      padding-right: 10px;
+    }
+
+    h3 {
+      display: inline;
+    }
+  }
+
+  .contact-info {
+    margin-top: $top-space;
+  }
+
+  .cart-items {
+    padding: 16px 20px;
+    margin-top: $top-space;
+    min-height: 80px;
+    border: 1px white dashed;
+    
+    .cart-item {
+      width: 100%;
+      display: inline-block;
+      margin-bottom: 10px;
+      padding: 5px 20px;
+
+      .price {
+        color: #2FDA7F;
+      }
+    }
+
+    h3 {
+      text-align: center;
+      margin-top: 10px;
+    }
+  }
+}

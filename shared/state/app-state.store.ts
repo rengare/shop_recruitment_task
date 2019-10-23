@@ -1,12 +1,13 @@
 import { Store, StoreConfig } from '@datorama/akita';
+import { MenuItem } from '@shared/components/navbar/navbar.model';
 
 export interface AppState {
-  key: string;
+  activeMenuItem: MenuItem
 }
 
 export function createInitialState(): AppState {
   return {
-    key: ''
+    activeMenuItem: null
   };
 }
 
@@ -20,4 +21,3 @@ export class AppStateStore extends Store<AppState> {
 }
 
 export const appStateStore = new AppStateStore();
-

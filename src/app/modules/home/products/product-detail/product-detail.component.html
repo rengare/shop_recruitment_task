@@ -1,0 +1,24 @@
+<div class="row">
+  <div class="col-md-12">
+    <img class="img-fluid" src="assets/images/product_image_big.png" alt="product_image">
+  </div>
+</div>
+
+<div class="col-md-12 product-details">
+  <div class="row">
+    <div class="col-md-8">
+      <h1>
+        {{product.title}}
+      </h1>
+      <p>
+        {{product.description}}
+      </p>
+      <p>
+        Price: {{product.price}}
+      </p>
+    </div>
+    <div class="col-md-4 d-flex align-items-center">
+      <button (click)="addToCart(product)" type="button" class="btn add-btn">Add produc to cart</button>
+    </div>
+  </div>
+</div>
